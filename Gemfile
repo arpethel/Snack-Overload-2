@@ -13,6 +13,9 @@ gem 'thin'
 gem 'jquery-rails'
 ##############################
 
+# Add Bootstrap
+gem 'bootstrap', '~> 4.0.0'
+
 # ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
