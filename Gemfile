@@ -25,6 +25,8 @@ gem 'sass-rails', '~> 5'
 # gem 'webpacker', '~> 4.0' DON'T NEED
 
 # Use the following gems for OAuth
+gem 'omniauth-facebook'
+gem 'omniauth'
 gem 'dotenv-rails'
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
