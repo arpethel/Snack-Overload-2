@@ -9,6 +9,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'bootstrap-sass', '3.3.7'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
+gem 'thin'
+gem 'jquery-rails'
 ##############################
 
 # ruby '2.5.1'
@@ -51,9 +53,10 @@ group :development, :test do
   # Added gems
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem "database_cleaner"
-  gem "rspec-rails"
-  gem "rack_session_access"
+  gem 'database_cleaner'
+  gem 'rspec-rails'
+  gem 'rack_session_access'
+  gem 'pry'
 end
 
 group :development do
