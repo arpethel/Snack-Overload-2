@@ -11,6 +11,7 @@ gem 'bootstrap-sass', '3.3.7'
 gem 'coffee-rails', '~> 4.2'
 gem 'thin'
 gem 'jquery-rails'
+gem 'devise'
 ##############################
 
 # Add Bootstrap
@@ -31,6 +32,7 @@ gem 'sass-rails', '~> 5'
 
 # Use the following gems for OAuth
 gem 'omniauth-facebook'
+gem 'omniauth-github'
 gem 'omniauth'
 gem 'dotenv-rails'
 

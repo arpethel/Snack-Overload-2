@@ -1,5 +1,6 @@
 <h1>Recipes</h1>
-<p><%= link_to("New post", new_post_path) %>
+<p><%= link_to("New post", new_post_path) %></p><br>
+<p><%= link_to "Home", user_path(@user) %></p><br>
 <% @posts.each do |post| %>
     <p><%= link_to("#{post.title}", post_path(post)) %><p>
 <% end %>
