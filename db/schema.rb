@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_15_154601) do
+ActiveRecord::Schema.define(version: 2019_09_15_191311) do
 
   create_table "posts", force: :cascade do |t|
     t.string "caption"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2019_09_15_154601) do
     t.string "image"
     t.string "uid"
     t.string "password_digest"
+    t.boolean "admin", default: false
   end
 
 end
