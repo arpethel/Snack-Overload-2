@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
   root 'welcome#home'
-  get '/auth/facebook/callback' => 'sessions#create'
-
+  
   resources :users, only: [:new, :create, :show]
-  get 'signup' => 'users#new'
-
   resources :sessions, only: [:new, :create]
+  resources :posts, only: [:new, :create, :show, :index, :edit, :update]
+
+  get '/auth/facebook/callback' => 'sessions#create'
+  get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
 
   delete 'session' => 'sessions#destroy', as: 'logout'
+
 end

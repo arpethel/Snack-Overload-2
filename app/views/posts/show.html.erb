@@ -5,6 +5,5 @@
 <strong>Chef:</strong> <%= @post.chef %><br>
 <strong>Caption:</strong> <%= @post.caption %><br>
 
-<% if @user.admin %>
-    <%= link_to "Edit Post", edit_post_path(@post) %>
-<% end %>
+
+<%= link_to "Edit Post", edit_post_path(@post) %>

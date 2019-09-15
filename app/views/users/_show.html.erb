@@ -1,11 +1,25 @@
-<p><%= session[:message] if session[:message] %></p>
+<!--<p><%= session[:message] if session[:message] %></p>-->
 
-<ul>
-    <h1><%= @user.name %></h1>
-    <h2>Email: <%= @user.email %></h2>
-    <h2>Facebook UID: <%= @user.uid %></h2>
-    <img src="<%= @user.image %>">
-</ul>
+
+<!-- show user's recepies -->
+<div class="card-group">
+  <div class="card">
+    
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    
+  </div>
+</div>
+
+
 
 <p><%= link_to("See Recipes", posts_path) %>
 <p><%= link_to("Log Out", logout_path, method: 'delete') %></p>

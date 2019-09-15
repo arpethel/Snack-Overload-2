@@ -8,15 +8,15 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
-    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!--<link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script
+    <!--<script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
       crossorigin="anonymous">
     </script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>-->
   </head>
   <!--
   <nav class="navbar text-center" style="margin-top: 75px">
@@ -25,22 +25,27 @@
   -->
 
   <% if session[:user_id] %>
-    <p>hello user</p>
+    <div class="navbar navbar-light bg-light" role="navigation">
+      <div class="container" style="margin-top:3rem">
+        <div class="row">
+          <div class="col-sm-5"></div>
+          <div class="col-sm-5"></div>
+          <div class="col-sm-2 form-inline navbar-brand">
+            <a><img src="<%= @user.image %>"></a>
+            <a><%= @user.name %></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <% else %>
     <div class="navbar navbar-light bg-light" role="navigation">
       <div class="container" style="margin-top:3rem">
         <div class="row">
           <div class="col-sm-4">
-            
           </div>
           <div class="col-sm-4"></div>
           <div class="col-sm-4">
-            <!--<form class="form-inline">
-            <input class="form-control mr-sm-2" type="username" placeholder="username" aria-label="Username">
-            <input class="form-control mr-sm-2" type="password" placeholder="password" aria-label="Password">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-            <a href="<%= login_url %>" class="btn btn-primary">Login</a>
-          </form>-->
             <a class="navbar-brand" >Snack Overload <strong>PREMIUM</strong></a>
             <a href="<%= login_url %>" class="btn btn-primary">Login</a>
           </div>

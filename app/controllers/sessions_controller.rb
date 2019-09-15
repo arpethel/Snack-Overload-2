@@ -11,18 +11,15 @@ class SessionsController < ApplicationController
       u.image = auth['info']['image']
     end
     
-    if @user.save
-      session[:user_id] = @user.id
-      render 'welcome/home'
-    else
-      @user = User.new(login_params)
-      if @user.save
-        session[:user_id] = @user.id
-        redirect_to @user
-      else 
-        render 'new'
-      end
-    end
+    session[:user_id] = @user.id
+    render 'welcome/home'
+
+    # if !@user.save
+      
+    #   @user = User.new(login_params)
+    #   session[:user_id] = @user.id
+    #   redirect_to @user
+    # end
     
   end
 

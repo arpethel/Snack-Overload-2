@@ -1,21 +1,3 @@
-<!--
-<div class="card">
-  <div class="card-body">
-    <h5 class="display-4">Sign Up</h5>
-    <form class="form-signin" action="/signup" method="post">
-        <div class="my-4 justify-content-center">
-            <input type="email" class="form-control my-2" name="email" placeholder="Email">
-            <input type="text" class="form-control my-2" name="username" placeholder="Username">
-            <input type="password" class="form-control my-2" name="password" placeholder="Password">
-            <button type="submit" class="btn btn-warning my-sm-2" value="Sign In">Sign Up</button>
-        </div>
-    </form>
-  </div>
-</div>
--->
-
-    
-
 <% if session[:user_id] %>
     <%= render 'users/show' %>
 <% else %>
@@ -28,19 +10,7 @@
       <div>
         <h3> <a href="<%= signup_url %>">Or Create Account With Email</a></h3>
       </div>
-      <!--
-      <form style="max-width: 30rem" action="/signup" method="post">
-        <input type="email" class="form-control" style="margin-top:1rem" name="email" placeholder="Email">
-        <input type="text" class="form-control" style="margin-top:1rem" name="username" placeholder="Username">
-        <input type="password" class="form-control" style="margin-top:1rem" name="password" placeholder="Password">
-        <button type="submit" class="btn btn-warning" style="margin-top:2rem" value="Sign In">Sign Up</button>
-      </form>
-      -->
     </div>
     <div class="col-sm-4"></div>
   </div>
-  
-
-    
-    
 <% end %>
