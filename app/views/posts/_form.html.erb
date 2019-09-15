@@ -1,0 +1,33 @@
+<%= form_for(@post) do |post_builder| %>
+    <p>
+        <%= post_builder.label :title %>
+        <%= post_builder.text_field :title %>
+    </p>
+
+    <p>
+        <%= post_builder.label :ingredients %>
+        <%= post_builder.text_field :ingredients %>
+    </p>
+
+    <p>
+        <%= post_builder.label :directions %>
+        <%= post_builder.text_field :directions %>
+    </p>
+
+    <p>
+        <%= post_builder.label :cooktime %>
+        <%= post_builder.text_field :cooktime %>
+    </p>
+
+    <p>
+        <%= post_builder.label :chef %>
+        <%= post_builder.text_field :chef %>
+    </p>
+
+    <p>
+        <%= post_builder.label :caption %>
+        <%= post_builder.text_field :caption %>
+    </p>
+
+    <%= post_builder.submit %>
+<% end %>
