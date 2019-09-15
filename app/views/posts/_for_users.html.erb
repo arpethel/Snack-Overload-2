@@ -1,0 +1,4 @@
+<h1>Recipes</h1>
+<% @posts.each do |post| %>
+    <p><%= link_to("#{post.name}", post_path(post)) %><p>
+<% end %>
