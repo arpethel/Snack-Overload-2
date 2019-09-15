@@ -1,0 +1,10 @@
+<strong>Title:</strong> <%= @post.title %><br>
+<strong>Ingredients:</strong> <%= @post.ingredients %><br>
+<strong>Directions:</strong> <%= @post.directions %><br>
+<strong>Cook Time:</strong> <%= @post.cooktime %><br>
+<strong>Chef:</strong> <%= @post.chef %><br>
+<strong>Caption:</strong> <%= @post.caption %><br>
+
+<% if @user.admin %>
+    <%= link_to "Edit Post", edit_post_path(@post) %>
+<% end %>
