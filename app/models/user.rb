@@ -1,6 +1,7 @@
 class User < ApplicationRecord
     has_secure_password
-    has_many :posts
+    has_many :recipes
+    has_many :posts, through: :recipes
 
     def admin_update
         if self.admin == 0

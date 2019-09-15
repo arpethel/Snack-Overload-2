@@ -1,3 +1,4 @@
 class Post < ActiveRecord::Base
-  belongs_to :user
+  has_many :recipes
+  has_many :users, through: :recipes
 end
