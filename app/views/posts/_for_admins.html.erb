@@ -1,0 +1,5 @@
+<h1>posts</h1>
+<% @posts.each do |post| %>
+    <p><%= link_to("Show #{post.name}", post_path(post)) %><p>
+<% end %>
+<p><%= link_to("New post", new_post_path) %>
