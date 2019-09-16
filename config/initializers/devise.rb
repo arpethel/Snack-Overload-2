@@ -3,7 +3,7 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
-  config.omniauth :github, '2f26a3630006e73728b8', '0a90a5e05491a9efc745f62c4efb35c48047f1ac', scope: 'user:email'
+  # config.omniauth :github, '2f26a3630006e73728b8', '0a90a5e05491a9efc745f62c4efb35c48047f1ac', scope: 'user:email'
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
